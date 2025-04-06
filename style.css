@@ -55,12 +55,13 @@ body {
   left: -2.5em;
 }
 
-/* Updated Search Box Styling */
+/* Search Bar Layout */
 .search-container {
   display: flex;
   align-items: center;
-  gap: 1em;
+  justify-content: space-between;
   width: 100%;
+  gap: 0.7em;
   margin-bottom: 2em;
 }
 
@@ -87,7 +88,7 @@ body {
 .search-container button {
   background-color: #fff;
   border: none;
-  padding: 0.6em 1em;
+  padding: 0.7em 1em;
   border-radius: 1em;
   cursor: pointer;
   font-size: 1em;
@@ -95,13 +96,15 @@ body {
   align-items: center;
   justify-content: center;
   color: #262626;
+  min-width: 3.2em;
+  height: 100%;
 }
 
 .search-container button i {
   font-size: 1.1em;
 }
 
-/* Result display styles */
+/* Result section */
 #result h2 {
   color: #fff;
   text-transform: uppercase;
@@ -170,7 +173,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* Responsive Enhancements */
+/* Responsive Design */
 @media screen and (max-width: 480px) {
   .wrapper {
     padding: 0.5em;
@@ -185,12 +188,16 @@ body {
     font-size: 2.5em;
   }
 
+  .search-container {
+    flex-direction: row;
+    gap: 0.5em;
+  }
+
   .search-container input {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
 
   .search-container button {
-    font-size: 0.9em;
-    padding: 0.5em 0.8em;
+    padding: 0.6em 0.9em;
   }
 }
