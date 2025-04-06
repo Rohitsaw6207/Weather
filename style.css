@@ -11,23 +11,27 @@ html {
 
 body {
   height: 100vh;
-  overflow: hidden; /* prevent scrolling */
+  overflow: hidden;
   background: linear-gradient(135deg, #000, #161616);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
-  position: fixed; /* stay fixed on screen */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.1); /* center + zoom */
-  width: 90vw;
-  max-width: 28em;
-  padding: 1em;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.1); /* zoom effect */
   z-index: 999;
+  padding: 1em;
 }
 
 .container {
-  width: 100%;
+  width: 90vw;
+  max-width: 28em;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 3em 1.8em;
@@ -38,6 +42,7 @@ body {
   position: relative;
 }
 
+/* Decorative Circles */
 .circle {
   position: absolute;
   background-color: rgb(30, 193, 185);
@@ -61,7 +66,7 @@ body {
   left: -2.5em;
 }
 
-/* Search Bar Layout */
+/* Search Bar */
 .search-container {
   display: flex;
   align-items: center;
@@ -110,7 +115,7 @@ body {
   font-size: 1.1em;
 }
 
-/* Result section */
+/* Result Display */
 #result h2 {
   color: #fff;
   text-transform: uppercase;
@@ -179,12 +184,10 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* ✅ Responsive Design */
+/* ✅ Responsive Enhancements */
 @media screen and (max-width: 600px) {
-  .wrapper {
-    width: 95vw;
-    transform: translate(-50%, -50%) scale(1);
-    padding: 1em;
+  html {
+    font-size: 14px;
   }
 
   .container {
@@ -194,7 +197,6 @@ body {
 
   .search-container {
     flex-direction: row;
-    align-items: center;
     gap: 0.5em;
   }
 
@@ -205,8 +207,6 @@ body {
 
   .search-container button {
     padding: 0.6em 0.9em;
-    min-width: auto;
-    width: auto;
   }
 
   #result h1 {
