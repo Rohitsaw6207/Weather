@@ -7,25 +7,24 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
+  width: 100%;
   background: linear-gradient(135deg, #000, #161616);
+  overflow: hidden;
+  position: fixed; /* Prevent zoom scroll effect */
 }
 
-/* Center everything */
+/* Center the wrapper using flexbox */
 .wrapper {
   height: 100vh;
   width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(1.1); /* zoom-in effect */
-  z-index: 999;
+  position: relative;
+  z-index: 1;
 }
 
-/* Frosted glass weather card */
+/* Weather card */
 .container {
   width: 90vw;
   max-width: 28em;
@@ -39,14 +38,14 @@ html, body {
   position: relative;
 }
 
-/* Floating circle background decorations */
+/* Decorative background circles */
 .circle {
   position: absolute;
   background-color: rgb(30, 193, 185);
   backdrop-filter: blur(1.2em);
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .circle-1 {
@@ -63,12 +62,11 @@ html, body {
   left: -2.5em;
 }
 
-/* Search bar with button and icon */
+/* Search field with icon button */
 .search-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   gap: 0.7em;
   margin-bottom: 2em;
 }
@@ -181,7 +179,7 @@ html, body {
   letter-spacing: 0.1em;
 }
 
-/* Responsive */
+/* Mobile responsiveness */
 @media screen and (max-width: 600px) {
   html {
     font-size: 14px;
@@ -193,7 +191,6 @@ html, body {
   }
 
   .search-container {
-    flex-direction: row;
     gap: 0.5em;
   }
 
