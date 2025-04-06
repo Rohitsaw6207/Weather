@@ -8,12 +8,13 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: linear-gradient(135deg, #000, #161616);
   overflow: hidden;
-  position: fixed; /* Prevent zoom scroll effect */
+  background: linear-gradient(135deg, #000, #161616);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-/* Center the wrapper using flexbox */
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -21,10 +22,9 @@ html, body {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-/* Weather card */
 .container {
   width: 90vw;
   max-width: 28em;
@@ -36,16 +36,16 @@ html, body {
   box-shadow: 0 1.8em 3.7em #000;
   text-align: center;
   position: relative;
+  z-index: 3;
 }
 
-/* Decorative background circles */
 .circle {
   position: absolute;
   background-color: rgb(30, 193, 185);
   backdrop-filter: blur(1.2em);
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .circle-1 {
@@ -62,7 +62,6 @@ html, body {
   left: -2.5em;
 }
 
-/* Search field with icon button */
 .search-container {
   display: flex;
   align-items: center;
@@ -87,10 +86,6 @@ html, body {
   color: #d6d3d3;
 }
 
-.search-container input:focus {
-  border-color: #fff;
-}
-
 .search-container button {
   background-color: #fff;
   border: none;
@@ -103,14 +98,12 @@ html, body {
   justify-content: center;
   color: #262626;
   min-width: 3.2em;
-  height: 100%;
 }
 
 .search-container button i {
   font-size: 1.1em;
 }
 
-/* Weather result styles */
 #result h2 {
   color: #fff;
   text-transform: uppercase;
@@ -179,7 +172,7 @@ html, body {
   letter-spacing: 0.1em;
 }
 
-/* Mobile responsiveness */
+/* Responsive design for mobile */
 @media screen and (max-width: 600px) {
   html {
     font-size: 14px;
