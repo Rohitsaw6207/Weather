@@ -4,22 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather</title>
+
+  <!-- Font & Icon Styles -->
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
-  rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
   <div class="wrapper">
-  <div class="circle circle-1"></div>
-  <div class="circle circle-2"></div>
-  <div class="container">
-  <div class="search-container">
-  <input type="text" placeholder="Enter a state or city name..." id="city" value="jammu"/>
-   <button id="search-btn">Search</button>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    
+    <div class="container">
+      <div class="search-container">
+        <input type="text" placeholder="Enter a state or city name..." id="city" value="jammu"/>
+        <i class="fas fa-search search-icon"></i>
+        <button id="search-btn">Search</button>
+      </div>
+      
+      <div id="result"></div>
+    </div>
   </div>
-  <div id="result"></div>
-  </div>
-  </div>
+
+  <!-- JavaScript Files -->
   <script src="key.js"></script>
   <script src="script.js"></script>
 </body>
