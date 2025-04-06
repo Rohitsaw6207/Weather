@@ -11,17 +11,19 @@ html {
 
 body {
   height: 100vh;
+  overflow: hidden; /* prevent scrolling */
   background: linear-gradient(135deg, #000, #161616);
 }
 
 .wrapper {
-  position: absolute;
+  position: fixed; /* stay fixed on screen */
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%) scale(1.1); /* center + zoom */
   width: 90vw;
   max-width: 28em;
-  transform: translate(-50%, -50%);
   padding: 1em;
+  z-index: 999;
 }
 
 .container {
@@ -181,6 +183,7 @@ body {
 @media screen and (max-width: 600px) {
   .wrapper {
     width: 95vw;
+    transform: translate(-50%, -50%) scale(1);
     padding: 1em;
   }
 
