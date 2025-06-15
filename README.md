@@ -7,6 +7,12 @@ It allows users to search for any city and get live weather data, including temp
 
 ---
 
+## 🖼 Preview
+
+![Weather App Screenshot](Demo-image/image.png)
+
+---
+
 ## 📌 Features
 
 - 🌍 Search weather by city name
@@ -30,7 +36,7 @@ It allows users to search for any city and get live weather data, including temp
 
 ## 🚀 How to Use
 
-1️⃣ Open the live demo link: [https://rohitsaw6207.github.io/Weather/](https://rohitsaw6207.github.io/Weather/)  
+1️⃣ Open the live demo: [https://rohitsaw6207.github.io/Weather/](https://rohitsaw6207.github.io/Weather/)  
 2️⃣ Enter the name of any city in the search box  
 3️⃣ View live weather details instantly  
 
@@ -40,4 +46,3 @@ It allows users to search for any city and get live weather data, including temp
 
 - The app uses **OpenWeatherMap's free API tier**, so request limits apply.
 - API key is hardcoded for learning/demo purposes — in production, you should secure your API keys.
-
