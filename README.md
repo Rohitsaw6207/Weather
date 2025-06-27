@@ -46,3 +46,18 @@ It allows users to search for any city and get live weather data, including temp
 
 - The app uses **OpenWeatherMap's free API tier**, so request limits apply.
 - API key is hardcoded for learning/demo purposes — in production, you should secure your API keys.
+
+---
+
+## 🧑‍💻 Author
+
+- **Rohit Kumar Saw**  
+- 📧 [rohitku6207@gmail.com](mailto:rohitku6207@gmail.com)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/rohit-kumar-saw6207/)  
+- 💻 [GitHub](https://github.com/Rohitsaw6207)
+
+---
+
+## ⭐ Support
+
+If you like this project, consider starring ⭐ the repository to support and inspire more work!
